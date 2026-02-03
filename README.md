@@ -2,7 +2,7 @@
 
 AI-powered document analysis tool that extracts insights from PDFs using RAG (Retrieval-Augmented Generation). Upload a document, choose your analysis mode, and get tailored summaries with follow-up Q&A.
 
-**Live Demo:** [sumpro.streamlit.app](https://sumpro.streamlit.app) *(replace with your actual URL after deployment)*
+**Live Demo:** [sumpro.streamlit.app](https://sumpro.streamlit.app) 
 
 ## Features
 
@@ -48,54 +48,7 @@ SumPro uses Retrieval-Augmented Generation instead of sending entire documents t
 - Python 3.8+
 - OpenAI API key
 
-### Setup
 
-```bash
-# Clone the repo
-git clone https://github.com/your-username/sumpro.git
-cd sumpro
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Set up your API key
-cp .env.example .env
-# Edit .env and add your OpenAI API key
-
-# Run
-streamlit run sumpro.py
-```
-
-Open `http://localhost:8501` in your browser.
-
-## Deploying to Streamlit Cloud
-
-1. Fork or clone this repo to your GitHub
-2. Go to [share.streamlit.io](https://share.streamlit.io)
-3. Click "New app"
-4. Select your repo and branch
-5. Set main file to `sumpro.py`
-6. Click "Advanced settings" → "Secrets"
-7. Add your OpenAI API key:
-```
-OPENAI_API_KEY = "sk-your-key-here"
-```
-8. Click "Deploy"
-
-Your app will be live at `your-app-name.streamlit.app` in 2-3 minutes.
-
-## API Costs
-
-This app uses OpenAI's API:
-- Embeddings: ~$0.0001 per 1K tokens
-- GPT-4o-mini: ~$0.0001 per 1K input, ~$0.0003 per 1K output
-- Average analysis: $0.002-0.01 per document
-
-Rate limiting (2 per user per day) helps control costs for public deployment.
-
-## Project Structure
-
-```
 sumpro/
 ├── sumpro.py           # Main application
 ├── requirements.txt    # Python dependencies
@@ -112,24 +65,9 @@ sumpro/
 - Rate limited to 2 analyses per user per day
 - No persistent storage (session-based)
 
-## Future Enhancements
-
-- Support for Word docs, images, web pages
-- Document comparison mode
-- Export summaries to PDF/Word
-- Local LLM support (eliminate API costs)
-- User authentication for higher limits
-
-## License
-
-MIT License - feel free to use this for your own projects.
 
 ## Author
 
 Built by Apinke as a portfolio project demonstrating RAG implementation, prompt engineering, and production deployment.
 
-## Contact
 
-- Portfolio: [your-portfolio-url]
-- LinkedIn: [your-linkedin]
-- GitHub: [@your-username](https://github.com/your-username)
