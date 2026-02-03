@@ -1,7 +1,7 @@
 import os
 os.environ['KMP_DUPLICATE_LIB_OK'] = 'TRUE'
 import streamlit as st
-from langchain.text_splitters import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_community.vectorstores import FAISS
 from dotenv import load_dotenv
