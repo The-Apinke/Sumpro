@@ -2,7 +2,7 @@
 
 AI-powered document analysis tool that extracts insights from PDFs using RAG (Retrieval-Augmented Generation). Upload a document, choose your analysis mode, and get tailored summaries with follow-up Q&A.
 
-**Live Demo:** [sumpro.streamlit.app](https://sumpro.streamlit.app) 
+**Live Demo:** (https://sumpro-c568ukrwkulsd2wrrv4xyx.streamlit.app/)
 
 ## Features
 
